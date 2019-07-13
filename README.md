@@ -1,15 +1,12 @@
 # Angular 8.0
 ## Calculadora
 
-![Calculadora]('./src/assets/img/markedown/calculator.jpg')
-
-- [Pessoas que não são Devs] Executar os comandos a seguir no cmd de seu sitema operacional
-
+![Calculadora](https://github.com/GustavoCaspirro/calculadora/blob/master/src/assets/img/markdown/calculator.JPG?raw=true)
 
 ### Passos Básicos depois de clonar o projeto
-- Comandos para verificar se já possue node e npm instalados e em quais versões
--- node -v para verificar versão do Node
--- npm -v para verificar versão do NPM
+- Comandos para verificar se já possue node e npm instalados e em quais versões.
+-- node -v para verificar versão do Node.
+-- npm -v para verificar versão do NPM.
 
 - Caso não tenha node instalado
 -- Acesse [node.js](https://nodejs.org/en/) e baixe a versão mais recente, por padrão o npm já será instalado.
