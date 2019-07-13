@@ -1,0 +1,57 @@
+// Add mixins em arquivo separado
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+    @if $inset {
+      -webkit-box-shadow:inset $top $left $blur $color;
+      -moz-box-shadow:inset $top $left $blur $color;
+      box-shadow:inset $top $left $blur $color;
+    } @else {
+      -webkit-box-shadow: $top $left $blur $color;
+      -moz-box-shadow: $top $left $blur $color;
+      box-shadow: $top $left $blur $color;
+    }
+}
+
+.wrapper-calculator {
+    //Adicionar mixins para projetos maiores
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    .box-memory {
+        position: absolute;
+        right: 14px;
+        top: 10px;
+        font-size: 11px;
+    }
+}
+
+.kz {
+    &-btn {
+        margin: 4px;
+        width: 90%;
+    } 
+
+    &-input-text {
+        height: 50px;
+        margin-left: 6px;
+        margin-top: 3px;
+        margin-bottom: 15px;
+        padding-top: 20px;
+        width: 96%;
+    }
+
+    &-pad-20 {
+        @include box-shadow(0, 0, 6px, rgba(0,0,0,.2));
+        box-shadow: 0 0 6px rgba(0,0,0,.2);
+        padding: 20px;
+    }
+}
+
+.col-xs-3,
+.col-xs-9 { padding: 0; }
+
+.btn-clean {
+    height: 50px;
+}
+
